@@ -4,6 +4,10 @@
 Autor:
 Iran Macedo - DCPT.
 
+Idioma/Language:
+Comentários em Português do Brasil.
+Brazilian Portuguese (comments).
+
 Info:
 Brute Force para sites que possuem autenticacao via autorizacao (Header Authorization: Basic HashBase64).
 Conecta no site, passando o hash de autorizacao no modelo "usuario:senha" encodado em Base64.
