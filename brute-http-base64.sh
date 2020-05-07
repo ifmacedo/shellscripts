@@ -1,7 +1,6 @@
 #!/bin/bash
 
 : 'COMENTARIOS - Nao remova esta linha
-
 Autor:
 Iran Macedo - DCPT.
 
@@ -10,57 +9,42 @@ Brute Force para sites que possuem autenticacao via autorizacao por JavaScript.
 Conecta no site, passando o hash de autorizacao no modelo "usuario:senha" encodado em Base64.
 Analisa a resposta apos conexao e direciona uma saida de dados, baseado no resultado obtido.
 Salva os dados de conexao no arquivo found.txt, no diretorio de execucao do script.
-
 ---
-
 Linguagem:
 Bash / Shell Script.
-
 ---
-
 Saida de dados:
 Erro de conexao: Codigo 401 - Nao Autorizado.
 Sucesso de conexao: Usuario, senha e hash em Base64 utilizado para logar no site. 
-
 ---
-
 Pre-reqs:
 - /bin/bash
 - curl
 - base64
-
 ---
-
 Versao:
 bash --version
 GNU bash, versão 5.0.16(1)-release (x86_64-pc-linux-gnu)
 Copyright (C) 2019 Free Software Foundation, Inc.
-
 curl --version
 curl 7.68.0 (x86_64-pc-linux-gnu) libcurl/7.68.0 OpenSSL/1.1.1d
 Release-Date: 2020-01-08
-
 ---
-
 Alteracoes no navegador Curl:
 - Altere o protocolo a ser utilizado: HTTP ou HTTPS.
 - Modifique o endereco da pagina a ser atacada.
 - Modifique o navegador e os Headers de conexao, conforme necessario.
 - Altere o usuario a ser utilizado.
 - Altere a lista de senhas a ser utilizada.
-
 ---
-
 Input padrao:
 usuario = admin
 senha = lista de senhas "rockyou.txt"
-
 ---
-
 Execucao:
 ./brute-http-base64.sh
-
 Fim dos comentarios '
+
 
 echo ""
 echo "-- Brute Force - HTTPS with Base64 Authorization"
