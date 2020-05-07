@@ -100,9 +100,9 @@ do
 	counter=$(( counter + 1 ))
 
 	#Conectando na pagina a ser testada
-	#connect=S( curl --silent http://172.16.1.155/cgi-bin/ids.cgi HTTP/1.1 \ #Descomente a linha para protocolo HTTP
-	connect=$( curl --insecure --ssl --silent https://172.16.1.155:444/cgi-bin/ids.cgi HTTP/1.1 \
-		-H "Host: 172.16.1.155:444" \
+	#connect=S( curl --silent http://172.16.1.250/cgi-bin/ids.cgi HTTP/1.1 \ #Descomente a linha para protocolo HTTP
+	connect=$( curl --insecure --ssl --silent https://172.16.1.250:444/cgi-bin/ids.cgi HTTP/1.1 \
+		-H "Host: 172.16.1.250:444" \
 		-A "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0" \
 		-H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" \
 		-H "Accept-Language: en-US,en;q=0.5" \
