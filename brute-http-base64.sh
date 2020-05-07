@@ -5,7 +5,7 @@ Autor:
 Iran Macedo - DCPT.
 
 Info:
-Brute Force para sites que possuem autenticacao via autorizacao por JavaScript.
+Brute Force para sites que possuem autenticacao via autorizacao (Header Authorization: Basic HashBase64).
 Conecta no site, passando o hash de autorizacao no modelo "usuario:senha" encodado em Base64.
 Analisa a resposta apos conexao e direciona uma saida de dados, baseado no resultado obtido.
 Salva os dados de conexao no arquivo found.txt, no diretorio de execucao do script.
